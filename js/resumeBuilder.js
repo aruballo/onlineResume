@@ -16,7 +16,7 @@ resumeBuilder.bio = {
     },
     "welcomeMessage": "Hello!",
     "skills": ["Javascript", "HTML5", "CSS3"]
-}
+};
 
 resumeBuilder.work = {
     "jobs": [{
@@ -27,7 +27,7 @@ resumeBuilder.work = {
         "description": "Worked with a range of IBM i technologies such as RPGIV, DDS, and CL as well as front end technlogies such HTML5, JS, and CSS. Initially did" +
             " customer and product support but through my own initiative took on other tasks such as web site migration, mobile development and customer service projects."
     }]
-}
+};
 
 resumeBuilder.education = {
     "schools": [{
@@ -43,7 +43,7 @@ resumeBuilder.education = {
         "dates": "November 2015 - Present",
         "url": "https://www.udacity.com"
     }]
-}
+};
 
 resumeBuilder.proj = {
     "projects": [{
@@ -52,7 +52,7 @@ resumeBuilder.proj = {
         "description": "Project Description",
         "images": ["images/project1.jpg"]
     }]
-}
+};
 
 //Resume HTML generation functions
 
@@ -66,7 +66,7 @@ resumeBuilder.displayBio = function() {
     $("#topContacts").prepend(HTMLmobile.replace("%data%", resumeBuilder.bio.contacts.mobile));
     $("#topContacts").prepend(HTMLgithub.replace("%data%", resumeBuilder.bio.contacts.github));
     $("#topContacts").prepend(HTMLlocation.replace("%data%", resumeBuilder.bio.contacts.location));
-}
+};
 
 
 resumeBuilder.displaySkills = function() {
@@ -83,7 +83,7 @@ resumeBuilder.displaySkills = function() {
 
     }
 
-}
+};
 
 
 resumeBuilder.displayWork = function() {
@@ -105,7 +105,7 @@ resumeBuilder.displayWork = function() {
         }
     }
 
-}
+};
 
 resumeBuilder.displayProjects = function() {
 
@@ -120,7 +120,7 @@ resumeBuilder.displayProjects = function() {
             //$(".project-entry:last").append(HTMLprojectDescription.replace("%data%", resumeBuilder.proj.projects[i].images[0]));
         }
     }
-}
+};
 
 resumeBuilder.displayEducation = function() {
 
@@ -150,8 +150,8 @@ resumeBuilder.displayEducation = function() {
             $(".onlineCourses-entry:last").append(HTMLonlineURL.replace("%data%", resumeBuilder.education.onlineCourses[i].url));
         }
     }
-}
+};
 
 resumeBuilder.displayMap = function() {
     $("#mapDiv").append(googleMap);
-}
+};
