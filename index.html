@@ -83,6 +83,8 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
         </div>
         <div id="letsConnect" class='dark-gray'>
             <h2 class='center-text cyanBackground white-text'>Let's Connect!</h2>
+            <ul id="footerContacts" class="flex-box">
+            </ul>
         </div>
     </div>
 
@@ -104,11 +106,10 @@ need to load. You'll see a lot of <link>s to CSS files for styles and
 
     <script type="text/javascript">
         $(document).ready(function() {
-            resumeBuilder.displayBio();
-            resumeBuilder.displaySkills();
-            resumeBuilder.displayWork();
-            resumeBuilder.displayProjects();
-            resumeBuilder.displayEducation();
+            resumeBuilder.bio.display();
+            resumeBuilder.work.display();
+            resumeBuilder.projects.display();
+            resumeBuilder.education.display();
             resumeBuilder.displayMap();
             $('#clock').jsclock();
             $('body').fadeIn(1500);
