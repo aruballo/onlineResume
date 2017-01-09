@@ -58,7 +58,15 @@ resumeBuilder.projects = {
         'description': 'Single page application built using Knockout.js and hosted on GitHub pages. A full page Google map that displays locations using the Yelp API.' +
         'Users can filter locations shown based on Yelp Categories and distance from current location. ' +
         'Users can also type into a search bar to search for locations',
-        'images': ['images/NeighborhoodApp.PNG']
+        'images': ['images/NeighborhoodApp.PNG'],
+        'url': '"http://aruballo.github.io/neighborhoodapp/"'
+    },
+    {
+        'title': 'Arcade Game',
+        'dates': 'July 2016',
+        'description': 'Browser game based on the classic game Frogger, created with Javascript, HTML5 and CSS3. Developed with native Javascript code using the canvas API offered in HTML5 for use across all major browsers.',
+        'images': ['images/RadioActiveBugs.JPG'],
+        'url': '"https://aruballo.github.io/Arcade-Game/"'
     }]
 };
 
@@ -114,9 +122,11 @@ resumeBuilder.projects.display = function() {
 
     if (projectsLength > 0) {
         for (var i = 0; i < projectsLength; i++) {
-            $('#projects').append(HTMLprojectImage.replace('%data%', resumeBuilder.projects.projects[i].images[0]));
+            //$('#projects').append(HTMLprojectImage.replace('%data%', resumeBuilder.projects.projects[i].images[0]));
             $('#projects').append(HTMLprojectStart);
-            $('.project-entry:last').append(HTMLprojectTitle.replace('%data%', resumeBuilder.projects.projects[i].title))
+            var projectTitle = HTMLprojectTitle.replace('%data%', resumeBuilder.projects.projects[i].title);
+            $('.project-entry:last').append(HTMLprojectImage.replace('%data%', resumeBuilder.projects.projects[i].images[0]))
+                .append(projectTitle.replace('%URL%', resumeBuilder.projects.projects[i].url))
                 .append(HTMLprojectDates.replace('%data%', resumeBuilder.projects.projects[i].dates))
                 .append(HTMLprojectDescription.replace('%data%', resumeBuilder.projects.projects[i].description));
         }

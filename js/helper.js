@@ -37,10 +37,10 @@ var HTMLworkLocation = '<div class="location-text">%data%</div>';
 var HTMLworkDescription = '<p><br>%data%</p>';
 
 var HTMLprojectStart = '<div class="project-entry"></div>';
-var HTMLprojectTitle = '<a href="http://aruballo.github.io/neighborhoodapp/" target="_blank">%data%</a>';
+var HTMLprojectTitle = '<a href=%URL% target="_blank">%data%</a>';
 var HTMLprojectDates = '<p class="date-text">%data%</p>';
 var HTMLprojectDescription = '<p><br>%data%</p>';
-var HTMLprojectImage = '<img class="project-image" src="%data%">';
+var HTMLprojectImage = '<div><img class="project-image" src="%data%"></div>';
 
 var HTMLschoolStart = '<div class="education-entry"></div>';
 var HTMLschoolName = '<a href="http://uci.edu/" target="_blank">%data%</a>';

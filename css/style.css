@@ -233,8 +233,7 @@ span {
 }
 
 .project-image{
-  width: 300px;
-  padding-left: 5%;
+  width: 225px;
   float: left;
 }
 
@@ -245,4 +244,8 @@ span {
 .onlineCourses-title {
   padding-top: 15px;
   padding-bottom: 0px;
+}
+
+.project-entry {
+  height: 160px;
 }
