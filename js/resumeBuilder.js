@@ -53,7 +53,7 @@ resumeBuilder.projects = {
         'description': 'Single page application built using Knockout.js and hosted on GitHub pages. A full page Google map that displays locations using the Yelp API.' +
         'Users can filter locations shown based on Yelp Categories and distance from current location. ' +
         'Users can also type into a search bar to search for locations',
-        'images': ['images/NeighborhoodApp.png']
+        'images': ['images/NeighborhoodApp.PNG']
     }]
 };
 
