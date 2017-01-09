@@ -156,7 +156,7 @@ ul {
 .biopic {
   float: left;
   padding: 10px;
-  width: 100px;
+  width: 125px;
   display: none;
 }
 
@@ -232,3 +232,8 @@ span {
   color: #008ebd;
 }
 
+.project-image{
+  width: 300px;
+  padding-left: 5%;
+  float: left;
+}

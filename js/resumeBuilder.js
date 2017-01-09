@@ -6,7 +6,7 @@ var resumeBuilder = resumeBuilder || {};
 resumeBuilder.bio = {
     'name': 'Antonio Ruballos',
     'role': 'Web Developer',
-    'biopic': 'images/Icon.png',
+    'biopic': 'images/ProfilePic.jpg',
     'contacts': {
         'email': 'ant.ruballos@gmail.com',
         'mobile': '626-399-9212',
@@ -48,10 +48,12 @@ resumeBuilder.education = {
 
 resumeBuilder.projects = {
     'projects': [{
-        'title': 'Project Placeholder',
-        'dates': 'November 2015',
-        'description': 'Project Description',
-        'images': ['images/project1.jpg']
+        'title': 'Neighborhood Map',
+        'dates': 'August 2016',
+        'description': 'Single page application built using Knockout.js and hosted on GitHub pages. A full page Google map that displays locations using the Yelp API.' +
+        'Users can filter locations shown based on Yelp Categories and distance from current location. ' +
+        'Users can also type into a search bar to search for locations',
+        'images': ['images/NeighborhoodApp.png']
     }]
 };
 
@@ -108,6 +110,7 @@ resumeBuilder.projects.display = function() {
 
     if (projectsLength > 0) {
         for (var i = 0; i < projectsLength; i++) {
+            $('#projects').append(HTMLprojectImage.replace('%data%', resumeBuilder.projects.projects[i].images[0]));
             $('#projects').append(HTMLprojectStart);
             $('.project-entry:last').append(HTMLprojectTitle.replace('%data%', resumeBuilder.projects.projects[i].title))
                 .append(HTMLprojectDates.replace('%data%', resumeBuilder.projects.projects[i].dates))
