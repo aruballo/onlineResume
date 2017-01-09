@@ -65,7 +65,7 @@ resumeBuilder.projects = {
         'title': 'Arcade Game',
         'dates': 'July 2016',
         'description': 'Browser game based on the classic game Frogger, created with Javascript, HTML5 and CSS3. Developed with native Javascript code using the canvas API offered in HTML5 for use across all major browsers.',
-        'images': ['images/RadioActiveBugs.JPG'],
+        'images': ['images/RadioActiveBugs.jpg'],
         'url': '"https://aruballo.github.io/Arcade-Game/"'
     }]
 };
