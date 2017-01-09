@@ -24,8 +24,13 @@ resumeBuilder.work = {
         'employer': 'Profound Logic Software',
         'dates': 'June 2012 - Present',
         'location': 'Irvine, CA',
-        'description': 'Worked with a range of IBM i technologies such as RPGIV, DDS, and CL as well as front end technlogies such HTML5, JS, and CSS. Initially did' +
-            ' customer and product support but through my own initiative took on other tasks such as web site migration, mobile development and customer service projects.'
+        'description': 
+            '<ul class="work-Experience-List"> ' + 
+            '<li>Recreate and resolve customer issues with large front-end JavaScript framework across all major browsers, with a range of 3–10 issues per day </li> ' +
+            '<li>Assisting in migration of newly developed company web site, and creating in-house Content Management System program for the 3 person marketing team </li> ' + 
+            '<li>Extending Ext.js based in-house CRM system with multiple features, such as tables listing potential customer opportunities and revenue statistics for hundreds of customers </li> ' +
+            '<li>Engage in services projects for customers, such as creating static HTML pages, publishing mobile applications, setting up SSL on Apache servers, and more </li> ' +
+            '</ul>'
     }]
 };
 
@@ -34,7 +39,7 @@ resumeBuilder.education = {
         'name': 'University of California, Irvine',
         'dates': 2012,
         'location': 'Irvine, CA',
-        'majors': ['CompSci & Eng'],
+        'majors': ['Computer Science and Engineering'],
         'degree': 'Bachelors of Science',
         'url' : 'http://www.uci.edu'
     }, ],
@@ -63,8 +68,7 @@ resumeBuilder.bio.display = function() {
 
     $('#header').prepend(HTMLheaderRole.replace('%data%', resumeBuilder.bio.role))
         .prepend(HTMLheaderName.replace('%data%', resumeBuilder.bio.name))
-        .append(HTMLbioPic.replace('%data%', resumeBuilder.bio.biopic))
-        .append(HTMLWelcomeMsg.replace('%data%', resumeBuilder.bio.welcomeMessage));
+        .append(HTMLbioPic.replace('%data%', resumeBuilder.bio.biopic));
     $('#topContacts').prepend(HTMLemail.replace('%data%', resumeBuilder.bio.contacts.email))
         .prepend(HTMLmobile.replace('%data%', resumeBuilder.bio.contacts.mobile))
         .prepend(HTMLgithub.replace('%data%', resumeBuilder.bio.contacts.github))
@@ -127,9 +131,9 @@ resumeBuilder.education.display = function() {
         for (var i = 0; i < educationLength; i++) {
             $('#education').append(HTMLschoolStart);
             $('.education-entry:last').append(HTMLschoolName.replace('%data%', resumeBuilder.education.schools[i].name))
-                .append(HTMLschoolDegree.replace('%data%', resumeBuilder.education.schools[i].degree))
                 .append(HTMLschoolDates.replace('%data%', resumeBuilder.education.schools[i].dates))
                 .append(HTMLschoolLocation.replace('%data%', resumeBuilder.education.schools[i].location))
+                .append(HTMLschoolDegree.replace('%data%', resumeBuilder.education.schools[i].degree))
                 .append(HTMLschoolMajor.replace('%data%', resumeBuilder.education.schools[i].majors[0]));
 
         }
@@ -142,8 +146,8 @@ resumeBuilder.education.display = function() {
         for (var i = 0; i < onlineCoursesLength; i++) {
             $('#education').append(HTMLonlineStart);
             $('.onlineCourses-entry:last').append(HTMLonlineSchool.replace('%data%', resumeBuilder.education.onlineCourses[i].school))
-                .append(HTMLonlineTitle.replace('%data%', resumeBuilder.education.onlineCourses[i].title))
                 .append(HTMLonlineDates.replace('%data%', resumeBuilder.education.onlineCourses[i].date))
+                .append(HTMLonlineTitle.replace('%data%', resumeBuilder.education.onlineCourses[i].title))
                 .append(HTMLonlineURL.replace('%data%', resumeBuilder.education.onlineCourses[i].url));
         }
     }

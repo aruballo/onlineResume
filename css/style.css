@@ -237,3 +237,12 @@ span {
   padding-left: 5%;
   float: left;
 }
+
+.work-Experience-List{
+  font-size: 14px;
+}
+
+.onlineCourses-title {
+  padding-top: 15px;
+  padding-bottom: 0px;
+}
