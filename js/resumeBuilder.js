@@ -73,7 +73,7 @@ resumeBuilder.bio.display = function() {
         .prepend(HTMLmobile.replace('%data%', resumeBuilder.bio.contacts.mobile))
         .prepend(HTMLgithub.replace('%data%', resumeBuilder.bio.contacts.github))
         .prepend(HTMLlocation.replace('%data%', resumeBuilder.bio.contacts.location));
-    $("#footerContacts").append(HTMLcontactGeneric.replace('%data%', resumeBuilder.bio.contacts.mobile).replace('%contact%', 'Antonio Ruballos'));
+    $("#footerContacts").append(HTMLcontactGeneric.replace('%data%', resumeBuilder.bio.contacts.email).replace('%contact%', 'Antonio Ruballos'));
 
     var skillsLength = resumeBuilder.bio.skills.length;
 

@@ -19,7 +19,7 @@ var HTMLcontactGeneric = '<li class="flex-item"><span class="darkBlue">%contact%
 var HTMLmobile = '<li class="flex-item"><span class="darkBlue">mobile</span><span class="white-text">%data%</span></li>';
 var HTMLemail = '<li class="flex-item"><span class="darkBlue">email</span><span class="white-text">%data%</span></li>';
 var HTMLtwitter = '<li class="flex-item"><span class="darkBlue">twitter</span><span class="white-text">%data%</span></li>';
-var HTMLgithub = '<li class="flex-item"><span class="darkBlue">github</span><span class="white-text">%data%</span></li>';
+var HTMLgithub = '<li class="flex-item"><a href="https://github.com/aruballo" target="_blank"><span class="darkBlue">github</span><span class="white-text">%data%</span></a></li>';
 var HTMLblog = '<li class="flex-item"><span class="darkBlue">blog</span><span class="white-text">%data%</span></li>';
 var HTMLlocation = '<li class="flex-item"><span class="darkBlue">location</span><span class="white-text">%data%</span></li>';
 
@@ -30,7 +30,7 @@ var HTMLskillsStart = '<h3 class="darkBlue">Skills at a Glance:</h3><ul id="skil
 var HTMLskills = '<li class="flex-item"><span class="white-text">%data%</span></li>';
 
 var HTMLworkStart = '<div class="work-entry"></div>';
-var HTMLworkEmployer = '<a href="#">%data%';
+var HTMLworkEmployer = '<a href="http://www.profoundlogic.com/" target="_blank">%data%';
 var HTMLworkTitle = ' - %data%</a>';
 var HTMLworkDates = '<div class="date-text">%data%</div>';
 var HTMLworkLocation = '<div class="location-text">%data%</div>';
@@ -43,7 +43,7 @@ var HTMLprojectDescription = '<p><br>%data%</p>';
 var HTMLprojectImage = '<img class="project-image" src="%data%">';
 
 var HTMLschoolStart = '<div class="education-entry"></div>';
-var HTMLschoolName = '<a href="#">%data%</a>';
+var HTMLschoolName = '<a href="http://uci.edu/" target="_blank">%data%</a>';
 var HTMLschoolDegree = '<br>%data%';
 var HTMLschoolDates = '<div class="date-text">June %data% </div>';
 var HTMLschoolLocation = '<div class="location-text">%data%</div>';
@@ -51,7 +51,7 @@ var HTMLschoolMajor = '<em><br>Major: %data%</em>';
 
 var HTMLonlineClasses = '<h3 class="onlineCourses-title">Online Courses</h3>';
 var HTMLonlineStart = '<div class="onlineCourses-entry"></div>';
-var HTMLonlineSchool = '<a href="#">%data%</a>';
+var HTMLonlineSchool = '<a href="https://www.udacity.com" target="_blank">%data%</a>';
 var HTMLonlineTitle = '<br>%data%';
 var HTMLonlineDates = '<div class="date-text"> September %data% </div>';
 var HTMLonlineURL = '<br><a href="#">%data%</a>';
